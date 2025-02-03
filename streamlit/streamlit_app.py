@@ -56,7 +56,7 @@ def main():
     st.sidebar.info("This App is based on the following Spotify Dataset from [Kaggle](https://www.kaggle.com/datasets/zaheenhamidani/ultimate-spotify-tracks-db).")
     st.sidebar.info("PCA and KMeans have been performed to cluster the songs into 5 groups (playlists) based on the song features.")
     st.sidebar.info("First, you can generate the playlist based on the selected features. Then, you can search for a random song from the list, which will redirect to YouTube.")
-    st.sidebar.image("https://raw.githubusercontent.com/jayson-7w/mlops-music-clustering/main/images/cassette.jpg")
+    st.sidebar.image("https://raw.githubusercontent.com/AIMaven/mlops-music-clustering/main/images/cassette.jpg")
 
     # Use st.session_state to persist variables across button clicks
     if 'filtered_playlist_df' not in st.session_state:
@@ -70,7 +70,7 @@ def main():
 
 
         # Download the model file from the URL and save it locally
-        local_model_filename = "https://raw.githubusercontent.com/jayson-7w/mlops-music-clustering/main/model/best_model.joblib"
+        local_model_filename = "https://raw.githubusercontent.com/AIMaven/mlops-music-clustering/main/model/best_model.joblib"
 
 
         # Load the model from the local file
