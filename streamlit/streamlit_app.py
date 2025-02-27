@@ -77,17 +77,6 @@ def main():
         model = joblib.load(open(local_model_filename, "rb"))
         predict = model.predict(df)
 
-
-        # # AWS URL Prediction
-        # endpoint_url = "http://3.76.204.179:8000/predict"
-        # song_features = df.to_dict(orient='records')[0]
-        # st.write(f"song_features: {song_features}")
-        # response = requests.get(endpoint_url, json=song_features) # GET Request
-        # st.write(f"responser: {response}")
-        # prediction = response.json()["prediction"]
-        # st.write(f"prediction: {prediction}")
-
-
         st.write("Let's Rock!🎸🎸🎸")
 
         # Read the dataset and rename columns
